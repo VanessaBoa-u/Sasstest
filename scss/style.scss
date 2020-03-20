@@ -1,7 +1,52 @@
-$couleur-principal: #657429;
-$cp: $couleur-principal;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab:100,200,300,400,500,600,700,800,900|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 
+
+$police-principale: 'Roboto';
+$police-titre: 'Roboto Condensed';
+$police-secondaire: 'Roboto Slab';
+$police-mono: 'Roboto Mono';
+$pp:$police-principale;
+$pt:$police-titre;
+$ps:$police-secondaire;
+$pm:$police-mono;
+
+$couleur-principal: #657429;
+$couleur-secondaire: #704529;
+$cp: $couleur-principal;
+$cs: $couleur-secondaire;
+img {
+    size:60%;
+    align-items:center;
+}
+
+%monplaceholder{
+    border:1px solid rgba(0,0,0,05);
+    border-radius: 20px 0;
+    padding: .5em;
+    font-weight: bold;
+    font-family:$pm;
+    color:#fff;
+}
+.block{
+    &-error{
+        @extend %monplaceholder;
+        background-color: red;
+    }
+    &-valid{
+        @extend %monplaceholder;
+        background-color: green;
+    }
+    &-warning{
+        @extend %monplaceholder;
+        background-color: orange;
+    }
+    &-info{
+        @extend %monplaceholder;
+        background-color: blue;
+    }
+}
 body{
+    font-family: $pp;
     background: #efefef;
     color: $cp !important;
     a{
@@ -24,6 +69,15 @@ body{
             }
         }
     }
+    h1,h2,h3,h4{
+        font-family:$pt;
+    }
+    blockquote{
+        font-family:$pm;
+    }
+    em,strong{
+        font-family:$ps;
+    }
     h1{
         color: #999;
         transition: all 1s ease;
@@ -34,14 +88,14 @@ body{
     div{
         a{
             
-       
+        }
         &:hover,&.class{
             background: red;
-        }
         }
 
     }
     div{
+        background-color:$cs;
         .foo{
             color: activecaption;
             background-color: yellow;
