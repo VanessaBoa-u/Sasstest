@@ -14,10 +14,6 @@ $couleur-principal: #657429;
 $couleur-secondaire: #704529;
 $cp: $couleur-principal;
 $cs: $couleur-secondaire;
-img {
-    size:60%;
-    align-items:center;
-}
 
 %monplaceholder{
     border:1px solid rgba(0,0,0,05);
@@ -88,7 +84,7 @@ body{
     div{
         a{
         }
-          
+
         &:hover,&.class{
             background: red;
         
