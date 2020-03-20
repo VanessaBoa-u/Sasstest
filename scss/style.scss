@@ -88,11 +88,10 @@ body{
     div{
         a{
             
-        }
         &:hover,&.class{
             background: red;
         }
-
+        }
     }
     div{
         background-color:$cs;
