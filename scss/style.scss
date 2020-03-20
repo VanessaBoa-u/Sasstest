@@ -87,10 +87,11 @@ body{
     }
     div{
         a{
-            
+        }
+          
         &:hover,&.class{
             background: red;
-        }
+        
         }
     }
     div{
