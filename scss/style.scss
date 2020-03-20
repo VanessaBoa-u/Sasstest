@@ -34,10 +34,12 @@ body{
     div{
         a{
             
-        }
+       
         &:hover,&.class{
             background: red;
         }
+        }
+
     }
     div{
         .foo{
@@ -50,19 +52,12 @@ body{
         }
     }
     p{
-        font:{
-            size: 1.2em;
-            weight: bold;
-            family: serif;
-        }
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: serif;
+        
     }
 }
-
-
-
-
-
-
 
 
 $tablet-width: 768px;
